@@ -1,0 +1,335 @@
+/*
+        Personal Portfolio
+        Common CSS styles for Portfolio Site																						 $:  Date of last commit
+
+        Structure
+        ---------
+        1.				Common 
+			1.1				Elements
+			1.2				Classes
+        2.				Structure
+        3. 				Header
+			3.2				Navigation
+        4.				Footer
+        5. 				Content
+			5.1				Work Examples
+			5.2				Biography
+		6.				Dialog
+		7.				Questionnaire
+			7.1				Web Form
+				7.1.1			Error States
+
+*/
+
+/* 1. Common */
+/*
+ * Elements that are common through the whole site
+ */
+
+/* 1.1 Common Elements */
+/*
+ * All styles applied to common elements
+*/
+
+html{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #EEE url(../images/background.jpeg);
+	background-attachment: fixed;
+	font-family: helvetica, arial, serif;
+    margin: 0;
+    padding: 0;
+	position: relative;
+	font-size: 16px;
+}
+h1, h2, h3, h4{
+	line-height: 1.0;
+}
+/*
+h1{
+	font-size: 28px;
+	color: #555;
+}
+*/
+h2{
+	font-size: 28px;
+	color: #444;
+	font-family: Lato, helvetica, arial, san-serif;
+	font-weight: 400;
+	text-align: center;
+	padding: 0 0 20px 0;
+}
+h3{
+	font-size: 18px;
+	clear: both;
+	text-align: center;
+}
+a{
+	color: #009EB8;
+	text-decoration: none;
+}
+a:hover, a:focus{
+	text-decoration: underline;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+sub{
+	display: block;
+	margin: 3px 0 0 0;
+	font-weight: normal;
+}
+textarea{
+	display: block;
+	margin: 10px 0 10px 30px;
+	width: 500px;
+	height: 200px;
+}
+fieldset{
+	border: none;
+}
+input, textarea{
+	font-size: 14px;
+}
+
+/* 1.2 Common Classes */
+/*
+ * Common classes that are used throughout the whole site
+*/
+
+.hidden{
+	display: none;
+}
+.error{
+	border: 1px solid #C40004;
+}
+
+/* 2. Structure */
+/*
+ * All elements relating to the core structure of the site are styled here.
+ */
+
+#content{
+	width: 860px;
+	margin: 0 auto;
+	border-radius: 0 0 5px 5px;
+	background: #FFF;
+	-moz-box-shadow: 0 0 5px 3px #DDD;
+	-webkit-box-shadow: 0 0 5px 3px #DDD;
+	box-shadow: 0 0 5px 3px #DDD;
+	-msie-box-shadow: 0 0 5px 3px #DDD;
+	-o-box-shadow: 0 0 5px 3px #DDD;
+	position: relative;
+	padding: 15px;
+}
+#home #content{
+	padding: 0;
+}
+.section{
+	border-bottom: 3px solid #EEE;	
+}
+
+/* 3.0 Header */
+/* 
+ * All styles relating to elements that are inside the header
+ */
+
+#header{
+	margin: 0 auto 15px auto;
+	padding: 0 0 2	px 0;
+	width: 930px;
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+	background: #FFF;
+	-moz-box-shadow: 0 0 5px 3px #DDD;
+	-webkit-box-shadow: 0 0 5px 3px #DDD;
+	box-shadow: 0 0 5px 3px #DDD;
+	-msie-box-shadow: 0 0 5px 3px #DDD;
+	-o-box-shadow: 0 0 5px 3px #DDD;
+}
+#header h1, #header h2{
+	display: inline-block;
+	font-weight: 100;
+	vertical-align: bottom;
+}
+#header h1{
+	margin: 20px 0 0 20px;	
+}
+#header h2{
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+#cv{
+	display: block;
+	float: right;
+}
+
+/* 3.2 Navigation */
+/*
+ * All styles relating to the navigation
+ */
+
+#navigation{
+	background: #1d1216;
+	letter-spacing: -3px;
+	margin: 20px 0 0 0;
+	box-shadow: -2px 4px 8px rgba(100, 100, 100, 0.5);	
+	-webkit-box-shadow: -2px 4px 8px rgba(100, 100, 100, 0.5);	
+	-moz-box-shadow: -2px 4px 8px rgba(100, 100, 100, 0.5);	
+	-ms-box-shadow: -2px 4px 8px rgba(100, 100, 100, 0.5);	
+	-o-box-shadow: -2px 4px 8px rgba(100, 100, 100, 0.5);	
+}
+#navigation li{
+	display: inline-block;
+	letter-spacing: 0;
+	margin: 0;
+	background: url(/assets/images/backgrounds/nav_border.gif) no-repeat right;	
+}
+#navigation li:first-child{
+	margin: 0 0 0 10px;
+}
+#navigation li a{
+	display: block;
+	color: #EEE;
+	text-decoration: none;
+	padding: 8px 15px;
+	font-size: 18px;
+}
+#navigation li:last-child{
+	background: none;
+}
+#navigation li a:hover{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+
+/* 4. Footer */
+/*
+ * All styles relating to the footer
+ */
+
+#footer{
+	margin: 15px auto 0 auto;
+	width: 840px;
+	padding: 5px 10px 5px 10px;
+	position: relative;
+	border-radius: 5px 5px 0 0;
+	background: #FFF;
+	-moz-box-shadow: 0 0 5px 3px #DDD;
+	-webkit-box-shadow: 0 0 5px 3px #DDD;
+	box-shadow: 0 0 5px 3px #DDD;
+	-msie-box-shadow: 0 0 5px 3px #DDD;
+	-o-box-shadow: 0 0 5px 3px #DDD;
+}
+#footer p{
+	text-align: center;
+}
+
+
+/* 5. Content */
+/*
+ * All styles relating to elements inside the main content area.
+ */
+
+#work{
+	padding: 15px;
+	width: 800px;
+	/* display: inline-block; */
+	vertical-align: top;
+	margin: 0 auto;
+}
+
+/* 5.1. Work Examples */
+/*
+ * Styles relating to work examples list
+ */
+
+.work-examples{
+	list-style: none;
+	margin: 20px auto 0;
+	padding: 0;
+}
+.work-examples li{
+	border-bottom: 3px solid #EEE;
+	padding: 0 0 15px 0;
+	width: 650px;
+	margin: 0 auto;
+}
+.work-examples li:last-child{
+	border: none;
+}
+.work-examples li ul{
+	list-style: circle;
+	margin: 0 0 0 20px;
+}
+.work-examples li ul li{
+	border: none;
+	margin: 5px 0 0 0;
+	width: auto;
+}
+.work-examples a{
+	text-decoration: none;
+}
+.work-examples img{
+	display: block;
+	margin: 10px auto 25px auto;
+}
+.work-examples p{
+	margin: 20px 0 0 0;
+}
+
+/* 5.2 Biography */
+/*
+ * All styles relating to the biography on the homepage
+ */
+
+#personal{
+	padding: 15px 15px 10px 15px;
+	width: 800px;
+	margin: 0 auto;
+	border-bottom: 4px solid #CCC;
+}
+#personal p{
+	font-size: 25px;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-family: Lato, helvetica, arial, sans-serif;
+}
+
+
+/* 6.0 Dialog */
+/* All styles pertaining to the dialog functionality */
+
+#shadow{
+	background: #000;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	opacity: 0.8;
+}
+#dialog{
+	background: #FFF;
+	min-height: 100px;
+	position: absolute;
+	z-index: 11;
+	top: 20px;
+	left: 50%;
+	margin: 0 0 0 -380px;
+	border-radius: 5px;
+	padding: 20px;
+}
+#dialog-content{
+	margin: 20px 0 0 0;
+}
+#dialog .close{
+	color: #000;
+	float: right;
+}
