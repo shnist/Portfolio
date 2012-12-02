@@ -39,4 +39,4 @@ Thumbs.db
 
 # Sensitive information #
 #########################
-build.properties
+*.properties
